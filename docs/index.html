@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="GIS 12 interactive remote sensing and GIS tutorial library featuring Sentinel-2, QGIS, and Bronx spatial analysis." />
+  <title>GIS 12 | Remote Sensing & GIS Tutorials</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#home" aria-label="GIS 12 home"><span class="brand-mark">GIS<span>12</span></span><span class="brand-copy">REMOTE SENSING <em>&</em> GIS<br /><small>INTERACTIVE TUTORIAL LIBRARY</small></span></a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">☰</button>
+      <nav id="navLinks" class="nav-links" aria-label="Main navigation"><a href="#home">Home</a><a href="#tutorials">Exercises</a><a href="#resources">Project Data</a><a href="#about">About</a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="shell hero-inner">
+        <div class="hero-copy"><span class="eyebrow"><span class="eyebrow-dot"></span> GIS 12 · LEARNING HUB</span>
+          <h1>Explore the Bronx.<br /><span>Learn GIS by doing.</span></h1>
+          <p>Follow nine hands-on tutorials to explore satellite imagery, mapping, buildings, and neighborhood patterns using QGIS and real-world Bronx datasets.</p>
+          <div class="hero-actions"><a class="button primary" href="#tutorials">Explore exercises <span aria-hidden="true">↗</span></a><a class="button secondary" href="#resources">Get project data ↓</a></div>
+          <div class="hero-stats"><div><strong>09</strong><span>Guided exercises</span></div><div><strong>QGIS</strong><span>Hands-on mapping</span></div><div><strong>Bronx</strong><span>Real study area</span></div></div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="map-grid"></div><div class="map-block b1"></div><div class="map-block b2"></div><div class="map-block b3"></div><div class="map-block b4"></div><div class="map-block b5"></div><div class="map-label">40.84° N &nbsp; 73.86° W</div><div class="map-chip">◈ &nbsp; BRONX STUDY AREA</div><div class="satellite-icon">✦</div></div>
+      </div>
+    </section>
+    <section class="overview shell" aria-label="Learning sequence"><div class="overview-card"><div class="overview-icon">◈</div><div><strong>Satellite imagery</strong><p>Understand Sentinel-2 bands and image interpretation.</p></div></div><div class="overview-card"><div class="overview-icon">▧</div><div><strong>Spatial data</strong><p>Explore vector layers, building attributes, and mapping.</p></div></div><div class="overview-card"><div class="overview-icon">⌁</div><div><strong>Urban analysis</strong><p>Investigate buildings, census income, and patterns.</p></div></div></section>
+    <section id="tutorials" class="section shell"><div class="section-heading"><div><span class="section-kicker">LEARN AT YOUR OWN PACE</span><h2>Exercise library</h2><p>Open each tutorial to follow its instructions. Download the Word version when you need an editable copy.</p></div><span class="count-badge">9 EXERCISES</span></div>
+      <div class="toolbar"><label class="search-field"><span aria-hidden="true">⌕</span><span class="sr-only">Search exercises</span><input id="searchInput" type="search" placeholder="Search exercises or topics..." /></label><div class="filter-group" aria-label="Filter exercises"><button class="filter active" data-filter="all" aria-pressed="true">All</button><button class="filter" data-filter="imagery" aria-pressed="false">Imagery</button><button class="filter" data-filter="gis" aria-pressed="false">GIS Data</button><button class="filter" data-filter="analysis" aria-pressed="false">Analysis</button></div></div>
+      <div id="exerciseGrid" class="exercise-grid" aria-live="polite"></div><p id="emptyState" class="empty-state" hidden>No exercises match your search.</p>
+      <p class="helper-note">↗ Tutorial links open in a new tab. Documents are hosted separately, so you can update them without changing this website.</p>
+    </section>
+    <section id="resources" class="resource-band"><div class="shell resource-layout"><div><span class="section-kicker light">FILES FOR YOUR WORKFLOW</span><h2>Project data & resources</h2><p>Get the datasets used throughout the course. Keep the project data folder available while following each exercise in QGIS.</p><div class="resource-actions"><a id="projectDataLink" class="button resource-btn" href="#" target="_blank" rel="noopener noreferrer">Open project data folder ↗</a><span id="projectDataStatus" class="resource-status"></span></div></div><div class="resource-graphic" aria-hidden="true"><div class="folder-back"></div><div class="folder-front"><span>GIS 12</span><strong>PROJECT DATA</strong><small>Satellite · Vector · Tables</small></div></div></div></section>
+    <section id="about" class="section shell about"><span class="section-kicker">ABOUT THIS COLLECTION</span><h2>Learning GIS through a real place.</h2><p>This tutorial series introduces remote sensing and geographic information systems through a connected set of Bronx-focused exercises. Students progress from understanding satellite imagery to exploring building characteristics and neighborhood income patterns. Each tutorial includes guided tasks and learning checks.</p><div class="about-tags"><span>Remote sensing</span><span>Sentinel-2</span><span>QGIS</span><span>Bronx, NYC</span><span>Spatial analysis</span></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><div><strong>GIS 12</strong><span>Remote Sensing & GIS Tutorials</span></div><p>Educational tutorial library · Bronx study area</p><a href="#home">Back to top ↑</a></div></footer>
+  <script src="config.js"></script><script src="app.js"></script>
+</body>
+</html>
